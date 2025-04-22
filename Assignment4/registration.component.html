@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register</h2>
+    <form action="login">
+        <!-- First Name -->
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10 digits">
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" required minlength="8">
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="form-group terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms & Conditions</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
